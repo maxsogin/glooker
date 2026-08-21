@@ -1,0 +1,69 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#07070a; width:760px; font-family:"SF Mono", Menlo, Monaco, monospace; font-size:15px; line-height:1.75; color:#c9ccd3; padding:34px 30px 60px; }
+  .dim    { color:#5a6070; }
+  .user   { color:#e8eaf0; font-weight:600; }
+  .prompt { color:#7aa2f7; }
+  .tool   { color:#d97757; }
+  .toolname { color:#e0af68; }
+  .ok     { color:#9ece6a; }
+  .hl     { color:#e8eaf0; font-weight:600; }
+  .sha    { color:#9ece6a; }
+  .plus   { color:#9ece6a; }
+  .minus  { color:#f7768e; }
+  .blk    { margin-bottom:14px; white-space:pre-wrap; }
+  .indent { padding-left:22px; }
+  .rule   { color:#2a2d38; }
+</style>
+<body>
+<div class="blk dim">$ claude</div>
+<div class="blk"><span class="prompt">&gt;</span> <span class="user">The CFO wants to know what our Claude spend actually
+got us last quarter. Real numbers.</span></div>
+
+<div class="blk"><span class="tool">⏺</span> <span class="toolname">glooker</span> <span class="dim">—</span> list_reports <span class="dim">(org: mock-org)</span>
+<span class="indent dim">⎿ 1 completed report · 14 days · 8 developers</span></div>
+
+<div class="blk"><span class="tool">⏺</span> <span class="toolname">glooker</span> <span class="dim">—</span> get_org_summary
+<span class="indent dim">⎿ 75 commits · 41 merged PRs · 9 repos</span></div>
+
+<div class="blk"><span class="tool">⏺</span> <span class="toolname">glooker</span> <span class="dim">—</span> query_model_usage
+<span class="indent dim">⎿ $6,486.12 across 2 models · 20,094 requests</span></div>
+
+<div class="blk"><span class="tool">⏺</span> <span class="toolname">glooker</span> <span class="dim">—</span> get_project_insights
+<span class="indent dim">⎿ 4 work clusters · incl. untracked maintenance</span></div>
+
+<div class="blk rule">────────────────────────────────────────────</div>
+
+<div class="blk"><span class="ok">⏺</span> <span class="hl">Here's what the spend bought, with receipts:</span></div>
+
+<div class="blk"><span class="hl">Shipped</span> <span class="dim">(merged only — suggestions don't count)</span>
+  • <span class="hl">75 commits, 41 PRs</span> across 9 repos
+  • API gateway hardening — 18 PRs, 3 devs
+  • Dashboard UI revamp — 11 PRs, 2 devs
+  • Data-pipeline v2 — 8 PRs
+  • Maintenance &amp; support — 23 commits,
+    <span class="dim">most of it never had a ticket</span></div>
+
+<div class="blk"><span class="hl">Cost against that</span>
+  • Total: <span class="hl">$6,486.12</span> → <span class="hl">$86 per shipped commit</span>
+  • $0.27/request · opus 60% / sonnet 40%
+  • 12% of merged commits were AI-assisted
+  • 7 of 8 devs: spend tracked impact.
+    One outlier — <span class="dim">high spend, low impact</span> —
+    flagged on the scatter.</div>
+
+<div class="blk"><span class="hl">Receipts</span> <span class="dim">(sample of 75)</span>
+<span class="sha">a41f9c2</span> feat(api-gateway): request signing    <span class="plus">+412</span> <span class="minus">−38</span>
+<span class="sha">9bc02e1</span> fix(data-pipeline): dedupe late evts  <span class="plus">+64</span>  <span class="minus">−9</span>
+<span class="sha">57d3aa8</span> refactor(auth-service): session rot.  <span class="plus">+230</span> <span class="minus">−180</span>
+<span class="sha">c8e1f04</span> feat(dashboard-ui): spend drilldown   <span class="plus">+388</span> <span class="minus">−41</span>
+<span class="sha">2f9ab77</span> test(shared-libs): retry semantics    <span class="plus">+156</span> <span class="minus">−3</span>
+<span class="sha">b30c5d9</span> fix(web-app): stale report cache      <span class="plus">+28</span>  <span class="minus">−31</span>
+<span class="sha">e77d21a</span> infra(etl-jobs): backfill runner      <span class="plus">+199</span> <span class="minus">−12</span>
+<span class="dim">… 68 more</span></div>
+
+<div class="blk"><span class="prompt">&gt;</span> <span class="dim">▊</span></div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; background:#f6f7f9; color:#1a1d23; width:760px; }
+  .top { background:#fff; border-bottom:1px solid #e5e8ec; padding:22px 28px; display:flex; align-items:center; justify-content:space-between; }
+  .top h1 { font-size:20px; font-weight:600; }
+  .top .crumb { color:#8a919c; font-size:13px; margin-top:3px; }
+  .pill { background:#eef1f5; border:1px solid #dde2e9; color:#5a6270; font-size:13px; padding:7px 14px; border-radius:8px; }
+  .wrap { padding:24px 28px 60px; }
+  .row { display:flex; gap:16px; margin-bottom:16px; }
+  .card { background:#fff; border:1px solid #e5e8ec; border-radius:12px; padding:20px 22px; flex:1; }
+  .label { font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:#8a919c; margin-bottom:8px; }
+  .big { font-size:30px; font-weight:700; }
+  .delta-up { color:#c2410c; font-size:13px; font-weight:600; margin-top:6px; }
+  .delta-flat { color:#8a919c; font-size:13px; margin-top:6px; }
+  .section-t { font-size:14px; font-weight:600; color:#3c434e; margin:26px 0 12px; }
+  table { width:100%; border-collapse:collapse; background:#fff; border:1px solid #e5e8ec; border-radius:12px; overflow:hidden; }
+  th { text-align:left; font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:#8a919c; padding:12px 16px; border-bottom:1px solid #e5e8ec; background:#fafbfc; }
+  th.r, td.r { text-align:right; }
+  td { padding:13px 16px; font-size:14px; border-bottom:1px solid #f0f2f5; }
+  tr:last-child td { border-bottom:none; }
+  .mono { font-variant-numeric: tabular-nums; }
+  .muted { color:#8a919c; }
+  .footnote { color:#a3aab4; font-size:12px; margin-top:14px; line-height:1.5; }
+</style>
+<body>
+<div class="top">
+  <div>
+    <h1>AI Usage &amp; Spend</h1>
+    <div class="crumb">Workspace analytics &middot; Mar 18 – 31 &middot; 8 seats</div>
+  </div>
+  <div class="pill">Last 14 days ▾</div>
+</div>
+<div class="wrap">
+
+  <div class="row">
+    <div class="card">
+      <div class="label">Total spend</div>
+      <div class="big mono">$6,486.12</div>
+      <div class="delta-up">▲ 38% vs prior period</div>
+    </div>
+    <div class="card">
+      <div class="label">Requests</div>
+      <div class="big mono">20,094</div>
+      <div class="delta-up">▲ 24%</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <div class="label">Active seats</div>
+      <div class="big mono">8 / 8</div>
+      <div class="delta-flat">no change</div>
+    </div>
+    <div class="card">
+      <div class="label">Sessions</div>
+      <div class="big mono">1,847</div>
+      <div class="delta-up">▲ 19%</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <div class="label">Lines suggested</div>
+      <div class="big mono">184,502</div>
+      <div class="delta-up">▲ 41%</div>
+    </div>
+    <div class="card">
+      <div class="label">Lines accepted</div>
+      <div class="big mono">57,196</div>
+      <div class="delta-flat">31% acceptance</div>
+    </div>
+  </div>
+
+  <div class="section-t">Daily spend</div>
+  <div class="card" style="padding:18px 18px 10px">
+    <svg width="668" height="210" viewBox="0 0 668 210">
+      <g stroke="#eef1f5" stroke-width="1">
+        <line x1="0" y1="40" x2="668" y2="40"/><line x1="0" y1="90" x2="668" y2="90"/>
+        <line x1="0" y1="140" x2="668" y2="140"/><line x1="0" y1="190" x2="668" y2="190"/>
+      </g>
+      <g fill="#d97757">
+        <rect x="12"  y="128" width="32" height="62" rx="3"/><rect x="59"  y="118" width="32" height="72" rx="3"/>
+        <rect x="106" y="132" width="32" height="58" rx="3"/><rect x="153" y="98"  width="32" height="92" rx="3"/>
+        <rect x="200" y="104" width="32" height="86" rx="3"/><rect x="247" y="76"  width="32" height="114" rx="3"/>
+        <rect x="294" y="88"  width="32" height="102" rx="3"/><rect x="341" y="66"  width="32" height="124" rx="3"/>
+        <rect x="388" y="94"  width="32" height="96" rx="3"/><rect x="435" y="58"  width="32" height="132" rx="3"/>
+        <rect x="482" y="70"  width="32" height="120" rx="3"/><rect x="529" y="44"  width="32" height="146" rx="3"/>
+        <rect x="576" y="52"  width="32" height="138" rx="3"/><rect x="623" y="30"  width="32" height="160" rx="3"/>
+      </g>
+      <text x="12" y="206" font-size="11" fill="#8a919c">Mar 18</text>
+      <text x="620" y="206" font-size="11" fill="#8a919c">Mar 31</text>
+    </svg>
+  </div>
+
+  <div class="section-t">Billing</div>
+  <div class="row">
+    <div class="card">
+      <div class="label">Upcoming invoice (est.)</div>
+      <div class="big mono">$13,940.00</div>
+      <div class="delta-flat">bills Apr 1</div>
+    </div>
+    <div class="card">
+      <div class="label">Avg cost / seat</div>
+      <div class="big mono">$810.76</div>
+      <div class="delta-up">▲ 38%</div>
+    </div>
+  </div>
+
+  <div class="section-t">Requests by day</div>
+  <div class="card" style="padding:18px 18px 10px">
+    <svg width="668" height="190" viewBox="0 0 668 190">
+      <g stroke="#eef1f5" stroke-width="1">
+        <line x1="0" y1="35" x2="668" y2="35"/><line x1="0" y1="80" x2="668" y2="80"/>
+        <line x1="0" y1="125" x2="668" y2="125"/><line x1="0" y1="170" x2="668" y2="170"/>
+      </g>
+      <polyline fill="none" stroke="#d97757" stroke-width="3" stroke-linejoin="round"
+        points="12,138 59,128 106,142 153,110 200,118 247,88 294,98 341,74 388,102 435,64 482,78 529,48 576,58 640,34"/>
+      <g fill="#d97757">
+        <circle cx="12" cy="138" r="4"/><circle cx="153" cy="110" r="4"/><circle cx="341" cy="74" r="4"/>
+        <circle cx="529" cy="48" r="4"/><circle cx="640" cy="34" r="4"/>
+      </g>
+      <text x="12" y="186" font-size="11" fill="#8a919c">Mar 18</text>
+      <text x="620" y="186" font-size="11" fill="#8a919c">Mar 31</text>
+    </svg>
+  </div>
+
+  <div class="section-t">Spend by model</div>
+  <table>
+    <tr><th>Model</th><th class="r">Requests</th><th class="r">Tokens</th><th class="r">Spend</th></tr>
+    <tr><td>opus</td><td class="r mono">12,057</td><td class="r mono">312.4M</td><td class="r mono">$3,243.07</td></tr>
+    <tr><td>sonnet</td><td class="r mono">8,037</td><td class="r mono">198.1M</td><td class="r mono">$2,162.04</td></tr>
+  </table>
+
+  <div class="section-t">Usage by seat</div>
+  <table>
+    <tr><th>Seat</th><th class="r">Sessions</th><th class="r">Lines suggested</th><th class="r">Spend</th></tr>
+    <tr><td>seat-01 <span class="muted">carol@…</span></td><td class="r mono">231</td><td class="r mono">28,114</td><td class="r mono">$1,153.63</td></tr>
+    <tr><td>seat-02 <span class="muted">bob@…</span></td><td class="r mono">402</td><td class="r mono">31,006</td><td class="r mono">$1,133.01</td></tr>
+    <tr><td>seat-03 <span class="muted">frank@…</span></td><td class="r mono">387</td><td class="r mono">40,911</td><td class="r mono">$1,116.84</td></tr>
+    <tr><td>seat-04 <span class="muted">alice@…</span></td><td class="r mono">344</td><td class="r mono">27,300</td><td class="r mono">$1,078.00</td></tr>
+    <tr><td>seat-05 <span class="muted">dave@…</span></td><td class="r mono">129</td><td class="r mono">16,882</td><td class="r mono">$756.48</td></tr>
+    <tr><td>seat-06 <span class="muted">eve@…</span></td><td class="r mono">198</td><td class="r mono">21,047</td><td class="r mono">$568.86</td></tr>
+    <tr><td>seat-07 <span class="muted">grace@…</span></td><td class="r mono">88</td><td class="r mono">9,410</td><td class="r mono">$366.68</td></tr>
+    <tr><td>seat-08 <span class="muted">hank@…</span></td><td class="r mono">68</td><td class="r mono">9,832</td><td class="r mono">$312.62</td></tr>
+  </table>
+
+  <div class="footnote">Usage metrics reflect assistant activity (sessions, suggestions, tokens). They do not indicate
+  whether suggested code was merged, shipped, or retained.</div>
+</div>
+</body>
+</html>
